@@ -1,0 +1,110 @@
+################################
+# Site Settings
+################################
+lang        : "en"
+logo        : "/assets/images/authors/author.jpg"
+title       : Ollidrog
+description : Data Science and More
+author      : Antonio Gordillo Toledo
+email       : ollidrog.agt@gmail.com
+baseurl     : "" # the subpath of your site, e.g. /blog
+url         : "https://antonio-gor.github.io"
+date_format : "%-d %b %Y"
+port        : 4000
+
+
+################################
+# Theme Settings
+################################
+remote_theme: minimal-jekyll-theme
+permalink   : /:title/
+
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:path/
+
+markdown: kramdown
+kramdown:
+    input: GFM
+    hard_wrap: false
+    syntax_highlighter: rouge
+
+sass:
+    sass_dir: _sass
+    style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+# Include/Exclude filetypes
+include:
+  - _pages
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+
+################################
+# Analytics Settings
+################################
+google_analytics: UA-XXXXXXXX-N
+google_analytics_async: true # https://developers.google.com/analytics/devguides/collection/analyticsjs/#alternative_async_tracking_snippet
+google_tag_manager:
+facebook_pixel_id:
+
+
+################################
+# Jekyll Plugins
+################################
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-archives
+
+# Jekyll SEO Tag Settings https://github.com/jekyll/jekyll-seo-tag
+social:
+  name: Antonio Gordillo Toledo
+  links:
+    - https://twitter.com/username
+    - https://www.linkedin.com/in/antonio-gordillo-toledo/
+    - https://www.github.com/antonio-gor
+
+twitter:
+  username: 
+
+facebook:
+  app_id:
+  publisher:
+  admins:
+
+webmaster_verifications:
+  google:
+  bing:
+  alexa:
+  yandex:
+
+# Jekyll Feed Settings https://github.com/jekyll/jekyll-feed
+atom_feed:
+    path: # Leave blank to use default (feed.xml)
+
+# Jekyll Archives Settings https://github.com/jekyll/jekyll-archives
+category_archive:
+  type: jekyll-archives
+  path: /categories/
+tag_archive:
+  type: jekyll-archives
+  path: /tags/
+jekyll-archives:
+  enabled:
+     - categories
+     - tags
+     - year
+     - month
+     - day
+  layout: 'archive'
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'

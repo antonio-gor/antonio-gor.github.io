@@ -1,0 +1,66 @@
+/*
+
+    THEME VARIABLES
+
+*/
+
+// Typography
+$font-family: 'Nunito', sans-serif;
+
+$code-font-family: 'Roboto Mono', sans-serif;
+$code-font-size: 0.9rem;
+$code-font-weight: 300;
+
+// Links
+$link: $black;
+$hover: $black-80;
+$author-cta-link: $silver;
+$author-cta-hover: $green;
+
+// Buttons
+$btn-primary: $blue;
+$btn-secondary: $silver;
+$btn-success: $green;
+$btn-warning: $yellow;
+$btn-danger: $red;
+$btn-info: $light-blue;
+$btn-light: $near-white;
+$btn-dark: $black-90;
+
+// Alerts
+$alert-primary: $light-blue;
+$alert-secondary: $light-gray;
+$alert-success: $washed-green;
+$alert-warning: $washed-yellow;
+$alert-danger: $washed-red;
+$alert-info: $lightest-blue;
+$alert-light: $near-white;
+$alert-dark: $black-90;
+
+// Codeblocks
+$code-background-color: #fbfbfb;
+$linenos-color: $moon-gray;
+$gutter-background-color: $light-gray;
+
+// Blockquotes
+$blockquote-border-color: $black;
+$blockquote-color: $black;
+
+// Footnotes
+$footnotes-color: $black-80;
+
+// Horizontal rule
+$hr-color: $light-gray;
+
+// Abbreviation
+$abbr-color: $black;
+
+// Tables
+$table-border-color: $black;
+$table-header-color: $white;
+
+// Highlighted text
+$mark-color: #E2EBFF;
+
+// Image captions
+$figcaption-color: $silver;
