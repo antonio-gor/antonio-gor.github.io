@@ -3,7 +3,7 @@ layout: post
 title:  "Kepler: Part 1 - Data Acquisition"
 author: Antonio Gordillo Toledo
 date:   2019-05-31
-tags: kepler exoplanet data terminal
+
 ---
 This is Part 1 of a series in which we work with data from the Kepler Space Telescope. Here, we first learn how to select our target data from the [NASA Exoplanet Archive](https://exoplanetarchive.ipac.caltech.edu/index.html) and then create a script to download the corresponding light curves from the [Mikulski Archive for Space Telescopes](https://archive.stsci.edu/) (MAST). 
 
