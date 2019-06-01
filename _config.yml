@@ -2,7 +2,7 @@
 # Site Settings
 ################################
 lang        : "en"
-logo        : "/assets/images/authors/author.jpg"
+logo        : 
 title       : Ollidrog
 description : Data Science and More
 author      : Antonio Gordillo Toledo
@@ -65,7 +65,7 @@ plugins:
 social:
   name: Antonio Gordillo Toledo
   links:
-    - https://twitter.com/username
+    #- https://twitter.com/username
     - https://www.linkedin.com/in/antonio-gordillo-toledo/
     - https://www.github.com/antonio-gor
 
@@ -88,12 +88,6 @@ atom_feed:
     path: # Leave blank to use default (feed.xml)
 
 # Jekyll Archives Settings https://github.com/jekyll/jekyll-archives
-category_archive:
-  type: jekyll-archives
-  path: /categories/
-tag_archive:
-  type: jekyll-archives
-  path: /tags/
 jekyll-archives:
   enabled:
      - categories
