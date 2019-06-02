@@ -1,0 +1,26 @@
+# Authors
+
+Antonio Gordillo Toledo:
+  name          : "Antonio Gordillo Toledo"
+  picture       : "/assets/images/authors/author.jpg"
+  url           : "/about/"
+  email         : "antonio.gor@hotmail.com"
+  bio           : "I'm a senior at Cal interested in math, physics, and computation. I'll be using this blog to share my work and projects as I dive deeper into these areas."
+  post_meta_bio : "Data Science Student @ UC Berkeley"
+  cta           : "Linkedin"
+  cta_url       : "https://www.linkedin.com/in/antonio-gordillo-toledo/"
+  twitter       : "jekyllrb"
+  facebook      : "jekyllrb"
+
+
+Joe Bloggs:
+  name          : "Joe Bloggs"
+  picture       : "/assets/images/authors/author-2.png"
+  url           : "http://example.com"
+  email         : "joebloggs458@gmail.com"
+  bio           : "This is a long bio that only appears under a blog post"
+  post_meta_bio : "Business man. Investor"
+  cta           : "Subscribe"
+  cta_url       : "/newsletter/"
+  twitter       : "joebloggs"
+  facebook      : "joebloggs"
