@@ -9,8 +9,8 @@ This is Part 1 of a series in which we work with data from the Kepler Space Tele
 
 Our ultimate goal is to process the data and create a machine learning model to detect potential exoplanets among the dataset. If you would like some background information as to what exoplanets and light curves are, I highly suggest reading Andrew Vanderburg's [tutorial](https://www.cfa.harvard.edu/~avanderb/tutorial/tutorial.html) where he provides both great explanations and animations relating to exoplanets and light curves.
 
-### Environment 
-If you wish to follow along, make sure you have python installed on your system. I will be working with python 3.6 on macOS 10.14.
+## Environment 
+If you wish to follow along, make sure you have Python installed on your system. I will be working with Python 3.6.8 on macOS 10.14.3.
 
 ## Data Acquisition
 ### Exoplanet Archive
@@ -70,3 +70,5 @@ We now have a working directory that contains a CSV file with all the informatio
 Those two scripts are no longer needed and can be removed. I will create a new folder called 'scripts' and move them there.
 
 We went over how to select our target objects from the NASA Exoplanet Archive and how to use scripts to download the corresponding light curves as FITS files from MAST. Now that we have this data, <mark>we can begin analyzing and processing it</mark>. That is the topic of the next parts of this series.
+
+[Kepler: Part 2 - Data Processing and EDA](/kepler-part-2/)
