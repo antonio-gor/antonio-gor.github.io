@@ -14,14 +14,14 @@ Before we begin writing any code, let's work out a plan for how we will proceed.
 * Open the CSV file and extract the TCE data/parameters
 * Open all FITS files and extract the light curve data
 
-## Environment 
+## Environment
 If you don't already have Python and Jupyter Notebooks, I suggest using the [Anaconda](https://www.anaconda.com/distribution/) distribution of Python. It includes many useful libraries for scientific computing and allows us to easily create environments for our projects. Specifically, I will be using
 
 * Python 3.6.8
 * conda 4.6.14
 * macOS 10.14.3
 
-We will now set up our environment. 
+We will now set up our environment.
 
 **If you have Anaconda installed**
 
@@ -95,26 +95,26 @@ import os
 def open_files(csv_file):
     '''
     The open_files function opens the csv and extracts the needed data.
-    
-    Args: 
-        csv_file: Should contain desired TCEs and parameters. 
+
+    Args:
+        csv_file: Should contain desired TCEs and parameters.
           Required Parameter: kepid,
                               av_training_set,
                               tce_plnt_num,
                               tce_period,
                               tce_time0bk.
-    
+
     Returns:
         tce_data: Panda DataFrame that has the parameters listed above.
     '''
-    
+
     ## Opening csv as tce_info using pandas
     ## This contains all metadata for all TCEs
     tce_info = pd.read_csv(csv_file)
-    
+
     ## Removing TCEs with label 'UNK'
-    tce_info = tce_info[tce_info.av_training_set != 'UNK']#.reset_index() 
-    
+    tce_info = tce_info[tce_info.av_training_set != 'UNK']#.reset_index()
+
     ## Isolate AFP and NTP
     not_pc = tce_info[tce_info['av_training_set'] != 'PC']
 
@@ -129,14 +129,16 @@ def open_files(csv_file):
 
     ## Shuffle the dataframe because all PCs are at the start
     tce_info = tce_info.sample(frac=1).reset_index(drop=True)
-    
+
 
     ## Extracting and combining kepids, periods, epochs into one DataFrame
-    tce_data = tce_info[['kepid', 
-                         'av_training_set', 
-                         'tce_plnt_num', 
-                         'tce_period', 
+    tce_data = tce_info[['kepid',
+                         'av_training_set',
+                         'tce_plnt_num',
+                         'tce_period',
                          'tce_time0bk']]
-    
+
     return tce_data
 {% endhighlight %}
+
+This series is a work in progress. Progress ends here, for now.
